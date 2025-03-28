@@ -1,0 +1,20 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+}
+
+.screen {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(45deg, #433B9A, #597FB1, #70C1C8);
+  font-family: 'Courier New', 'Courier', sans-serif;
+}
+
