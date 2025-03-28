@@ -12,9 +12,64 @@ body {
 }
 
 .screen {
+  display: grid;
+  place-content: center;
   width: 400px;
   height: 400px;
   background: linear-gradient(45deg, #433B9A, #597FB1, #70C1C8);
   font-family: 'Courier New', 'Courier', sans-serif;
+  color: #fff;
 }
 
+.numbers {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
+
+.one-one {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  left: -15px;
+  height: 40px;
+  width: 20px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.one-two {
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  height: 100px;
+  width: 22px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.zero1, .zero2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 25px solid #fff;
+  border-radius: 50%;
+  z-index: 8;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  left: 12px;
+}
+
+.zero2 {
+  z-index: 6;
+  left: 95px;
+}
+
+.days {
+  font-size: 80px;
+}
+
+.challenge {
+  font-size: 24px;
+}
